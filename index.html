@@ -1,0 +1,222 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+
+    <div class="menu" >
+        <div>
+            <ul class="menu-icons" id="menu">
+                <li class="active"><i class="fas fa-columns"></i></li>
+                <li><i class="fas fa-file"></i></li>     
+                <li><i class="fas fa-chart-area"></i></li>
+                <li><i class="fab fa-buromobelexperte"></i></li>
+                <li><i class="fas fa-user-friends"></i></li>
+                <li><i class="fas fa-cog"></i></li>
+            </ul>
+        </div>
+        <div class="menu-profile">
+            <a href="#"><img src="images/profileimg.jpg"></a>
+        </div>
+    </div>
+
+    <div class="search-line">
+        <div class="show-menu" id="showmenu">
+            <img src="images/menu3.svg">
+        </div>
+        <form class="search-box">
+
+            <img src="images/searchicon.svg" class="searchicon">
+            <input type="search" placeholder="Search Your Project">
+        </form>
+        <div class="language">
+            <div class="lang-img">
+                <img src="images/flag.svg">
+            </div>
+            <form>
+                <select name="" id="select-box">
+                    <option value="English">English</option>
+                    <option value="Persian">Persian</option>
+                </select>
+            </form>
+            <div class="bell">
+                <div class="bell-light"></div>
+                <img src="images/bell.svg" alt="">
+
+            </div>
+
+        </div>
+    </div>
+<div class="total">
+  <div class="under1"></div>
+    <div class="content">
+
+        <div class="dashboard">
+            <span class="dashboard-title">My Dashboard</span>
+            <div class="cards">
+                <div class="card card1">
+                    <div class="card-img">
+                        <img src="images/1.svg">
+                    </div>
+                    <div class="card-title">
+                        <a href="#" >UI Design</a>
+                    </div>
+                    <span class="sub-title">5 projects</span>
+                    <a class="card-btn" href="#">View All</a>
+                </div>
+                <div class="card card2">
+                    <div class="card-img">
+                        <img src="images/2.svg">
+                    </div>
+                    <div class="card-title">
+                        <a href="#" >Illustration</a>
+                    </div>
+                    <span class="sub-title">5 projects</span>
+                    <a class="card-btn" href="#">View All</a>
+                </div>
+                <div class="card card3">
+                    <div class="card-img">
+                        <img src="images/3.svg">
+                    </div>
+                    <div class="card-title">
+                        <a href="#" >Development</a>
+                    </div>
+                    <span class="sub-title">5 projects</span>
+                    <a class="card-btn" href="#">View All</a>
+                </div>
+
+
+            </div>
+            <div class="second-row">
+                <div class="orely-studio">
+                    <span class="studio-dot">..</span>
+                    <div class="studio-img">
+                        <img src="images/studioimg.jpg">
+                    </div>
+                    <a href="#" class="studio-title">Orely Studio</a>
+                    <span class="studio-sub-title">Design studio focus on UI/UX Design</span>
+                    <div class="studio-footer">
+                        <div class="sf-content border-r">
+                            <span class="s-footer-title ">23</span>
+                            <span class="studio-sub-title">Clients</span>
+                        </div>
+                        <div class="sf-content">
+                            <span class="s-footer-title ">#2</span>
+                            <span class="studio-sub-title">Reputation</span>
+                        </div>
+                        <div class="sf-content border-l">
+                            <span class="s-footer-title ">17</span>
+                            <span class="studio-sub-title">Members</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-members">
+                    <span class="team-title">Team Members</span>
+                    <span class="team-dot">..</span>
+                    <div class="members">
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="images/profileimg.jpg">
+                            </div>
+                            <div class="member-details">
+                                <a href="#" class="member-name">Ariene MacCoy</a>
+                                <span class="member-job">UI Designer</span>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="images/profileimg2.jpg">
+                            </div>
+                            <div class="member-details">
+                                <a href="#" class="member-name">Annette Black</a>
+                                <span class="member-job">Developer</span>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="images/profileimg3.jpg">
+                            </div>
+                            <div class="member-details">
+                                <a href="#" class="member-name">Robert Fox</a>
+                                <span class="member-job">Animator</span>
+                            </div>
+                        </div>
+                        <div class="member">
+                            <div class="member-img">
+                                <img src="images/profileimg4.jpg">
+                            </div>
+                            <div class="member-details">
+                                <a href="#" class="member-name">Katrhyn Morphy</a>
+                                <span class="member-job">UX Researcher</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="schedules">
+            <div class="schedules-title">
+                <span class="dashboard-title">schedules</span>
+                <a href="#" class="schedules-details">view details</a>
+            </div>
+            <div class="graph">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="days">
+                <span class="team-title">Today</span>
+                <div class="day">
+                    <div class="day-img">
+                        <span class="day-img-title">23</span>
+                        <span class="day-sub-title">Mon</span>
+                    </div>
+                    <div class="day-right">
+                       <a href="#" class="member-name">Food app concept</a> 
+                       <div class="day-b-t">
+                           <span class="member-job">UI Design</span>
+                           <span class="dot">.</span>
+                           <span class="day-b-t2">. 13:00 pm</span>
+                           <span class="mark">></span>
+                       </div>
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="day-img">
+                        <span class="day-img-title">25</span>
+                        <span class="day-sub-title">Wed</span>
+                    </div>
+                    <div class="day-right">
+                       <a href="#" class="member-name">Landing page UI full illustration</a> 
+                       <div class="day-b-t">
+                           <span class="member-job">UI Design</span>
+                           <span class="dot">.</span>
+                           <span class="day-b-t2">. 10:00 am</span>
+                           <span class="mark">></span>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/all.min.js"></script>
+</body>
+</html>
