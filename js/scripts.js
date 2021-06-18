@@ -26,18 +26,23 @@ document.getElementById("showmenu").addEventListener("click",function(){
 
 
 document.getElementById("menu").addEventListener("click",function(e){
-    let elm = document.getElementsByTagName("i");
-     for(let i in elm){
-         if(e.target.parentElement.parentElement.classList.contains("active")){
-    //         elm[i].classList.remove("active")
-            console.log(e.target.parentElement.nodeName)
+   // let elm = document.getElementsByTagName("li");
+    
+if(e.target.nodeName == "I"){
+
+
+         if(e.target.parentElement.classList.contains("active")){
+
         }else{
-            console.log("nadaraaaaaaaaaad")
+        let elm =document.getElementById("menu").getElementsByTagName("Li")
+
+        for(let i in elm){
+console.log(elm[i])
+           elm[i].className = ""
         }
-    //     e.target.parentElement.classList.add("active")
-
-     }
-
+         e.target.parentElement.classList.add("active")
+        }
+    }
 })
 
 
